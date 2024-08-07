@@ -1,0 +1,221 @@
+html{
+    margin: 70px;
+    background-color: #f0f0f0;
+}
+.card-container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 120%;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.card {
+    padding-top: 10px;
+    width: 80%;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+form label {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+form h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 890;
+    font-size: 30px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(131, 131, 131);
+    outline: none;
+    background: transparent;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+input{
+    transition: 0.2s ease-in-out;
+}
+
+input:focus {
+    border-bottom: 1.2px solid rgb(0, 0, 0);
+}
+
+.user::before, .password::before:focus{
+    opacity: 1;
+}
+
+.user,
+.password {
+    display: grid;
+    gap: 10px;
+}
+
+.user::before{
+    background-image: url('https://cdn.iconscout.com/icon/free/png-512/free-user-1851010-1568997.png?f=webp&w=512');
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    top: 70px;
+    background-size: 20px;
+    opacity: 0.5;
+}
+
+.user input {
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+
+}
+
+.password input {
+    padding: 10px 10px 10px 30px;
+    font-size: 16px;
+}
+
+.password::before{
+    background-image: url('https://www.svgrepo.com/show/21785/lock.svg');
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    top: 70px;
+    background-size: 20px;
+    opacity: 0.5;
+}
+
+button {
+    border-radius: 50px;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: #158ee5;
+    color: white;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex-grow: 0.5;
+    background: #333;
+    height: 0.5px;
+    margin: 0 12px;
+}
+
+.social-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-signup img {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 50px;
+    margin-right: 13px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-signup .google {
+    background-color: #fff;
+}
+
+.social-signup .facebook {
+    background-color: #3b5897;
+}
+
+.social-signup .twitter {
+    background-color: #5fa8dd;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+}
+
+.social-signup img:hover {
+    scale: 1.07;
+    box-shadow: 0 0 11px rgba(46, 46, 46, 0.4);
+}
+
+.acc {
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.acc a{
+    text-decoration: none;
+    color: #0a436b;
+}
+.acc a:hover{
+    color: #158ee5;
+    text-decoration: underline;
+}
+
+.forgot {
+    text-decoration: none;
+    color: rgb(64, 44, 198);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+.forgot:hover{
+    color: rgb(141, 129, 218);
+}
