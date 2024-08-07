@@ -45,4 +45,6 @@ We welcome contributions to improve the Simple Login project! To contribute:
    ```
 6. **Submit a Pull Request**.
 
+
+
 DISCALIMER: NOT RESPONSIVE
